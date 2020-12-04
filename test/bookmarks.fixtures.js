@@ -23,3 +23,7 @@ function makeBookmarksArray() {
     }
   ]
 }
+
+module.exports = {
+  makeBookmarksArray
+  };
