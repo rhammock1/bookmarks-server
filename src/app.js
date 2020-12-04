@@ -31,6 +31,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 app.use(validateBearerToken, bookmarksRouter)
+
 app.use(function errorHandler(error, req, res, next) {
   let response;
   if(NODE_ENV === 'production') {

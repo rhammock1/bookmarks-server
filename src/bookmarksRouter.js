@@ -19,7 +19,7 @@ function isValidUrl(string) {
 
 bookmarksRouter
   .route('/bookmarks')
-  .get((req, res) => {
+  .get((req, res, next) => {
     res.status(200).json(store);
   })
   .post(bodyParser, (req, res) => {
